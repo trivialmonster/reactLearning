@@ -1,0 +1,35 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        // "loose": true,
+        "useBuiltIns": true,
+        // 引入babel-polyfill后能够按需引入对应的polyfill，不会全部打包进项目
+        "targets": {
+          "browsers": [
+            "IE >= 9",
+            "iOS >= 7",
+            "Android >= 4"
+          ]
+        },
+        "debug": false
+      }
+    ],
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+//    "react-hot-loader/babel",
+    "transform-runtime"
+//    [
+//      "import",
+//      {
+//        "libraryName": "antd",
+//        //        "libraryDirectory": "es",
+//        "style": true
+//      }
+//    ]
+  ]
+}
